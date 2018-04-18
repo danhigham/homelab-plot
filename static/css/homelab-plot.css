@@ -1,0 +1,22 @@
+
+h1, h2 { clear: both; }
+h1 { font-size: 1.8rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.2rem; font-weight: normal; }
+ul#hosts > li, ul#deployments > li, ul#deployments > li > div.vms > ul > li { float: left; clear: both; }
+ul, ul li { display: inline-block; margin: 0; padding: 0; }
+div.label, div.charts { float: left; display: block; }
+div.charts > ul > li { padding: 10px 30px 2px 15px; border: 1px dotted #eee; display : inline-block; margin : 0px 0px 10px 10px; }
+ul#hosts, ul#deployments, div.vms > ul { padding-left : 10px; }
+div.label { min-width: 150px; }
+
+.y-axis {
+  float: left;
+  height: 150px;
+  width: 40px;
+}
+
+.chart-body {
+  margin-left: 40px;
+  width: 400px;
+}

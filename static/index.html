@@ -1,0 +1,35 @@
+<!doctype html> 
+<html>
+    <head>
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/underscore-min.js"></script>
+        <script src="/js/mustache.min.js"></script>
+        <script id="host_tmpl" type="x-tmpl-mustache">
+          <li id="host-{{id}}"><div class="label"><h3>{{name}}</h3></div><div class="charts"><ul></ul></div></li>
+        </script>
+        <script id="deployment_tmpl" src="/templates/deployment.tmpl" type="x-tmpl-mustache">
+          <li id="deployment-{{id}}"><div class="label"><h2>{{name}}</h2></div><div class="vms"><ul></ul></div></li>
+          </script>
+        <script id="vm_tmpl" src="/templates/vm.tmpl" type="x-tmpl-mustache">
+          <li id="{{id}}"><div class="label"><h3>{{name}} / {{index}}</h3></div><div class="charts"><ul></ul></div></li>
+        </script>
+        <script src="/js/async.min.js"></script>
+        <script src="/js/d3.min.js"></script> 
+        <script src="/js/d3.layout.min.js"></script> 
+        <script src="/js/rickshaw.min.js"></script> 
+        <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css" /> 
+        <link type="text/css" rel="stylesheet" href="/css/rickshaw.min.css" />
+        <link type="text/css" rel="stylesheet" href="/css/homelab-plot.css" />
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+          <h1>Hosts</h1>
+          <ul id="hosts"></ul>
+          <h1>Deployments</h1>
+          <ul id="deployments"></ul>
+        </div>
+        <script src="/js/plot.js"></script> 
+    </body>
+</html>

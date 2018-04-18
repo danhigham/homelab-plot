@@ -1,0 +1,16 @@
+{
+  "chartMetrics": [
+    {
+      "key": "cpu.usage.average",
+      "max": 100,
+      "min": 0,
+      "unitLabel": "CPU %"
+    }, {
+      "key": "mem.usage.average",
+      "unitLabel": "MB"
+    }, {
+      "key": "net.usage.average",
+      "unitLabel": "kbps"
+    }
+  ]
+}
